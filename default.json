@@ -1,0 +1,60 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    ":configMigration",
+    "abandonments:recommended",
+    ":dependencyDashboard",
+    ":ignoreModulesAndTests",
+    "mergeConfidence:all-badges",
+    "replacements:all",
+    "workarounds:all",
+    ":docker",
+    ":enablePreCommit",
+    ":enableRenovate",
+    ":enableVulnerabilityAlerts",
+    ":npm",
+    ":prConcurrentLimitNone",
+    ":prHourlyLimitNone",
+    "preview:dockerCompose",
+    "preview:dockerVersions",
+    "security:openssf-scorecard"
+  ],
+  "automergeStrategy": "squash",
+  "dependencyDashboardHeader": "",
+  "dependencyDashboardOSVVulnerabilitySummary": "all",
+  "digest": {
+    "automerge": true
+  },
+  "lockFileMaintenance": {
+    "automerge": true,
+    "enabled": true,
+    "schedule": ["at any time"]
+  },
+  "minimumReleaseAge": "3 days",
+  "osvVulnerabilityAlerts": true,
+  "pin": {
+    "automerge": true
+  },
+  "seperateMajorMinor": true,
+  "seperateMinorPatch": true,
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["patch"],
+      "groupName": "All patch dependencies",
+      "groupSlug": "all-patch",
+      "automerge": true
+    },
+    {
+      "matchUpdateTypes": ["minor"],
+      "groupName": "All minor dependencies",
+      "groupSlug": "all-minor",
+      "automerge": false
+    },
+    {
+      "matchUpdateTypes": ["major"],
+      "groupName": "All major dependencies",
+      "groupSlug": "all-major",
+      "automerge": false
+    }
+  ]
+}
