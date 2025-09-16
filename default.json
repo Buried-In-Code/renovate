@@ -28,7 +28,7 @@
   "lockFileMaintenance": {
     "automerge": true,
     "enabled": true,
-    "schedule": ["at any time"]
+    "schedule": ["* */6 * * *"]
   },
   "minimumReleaseAge": "3 days",
   "osvVulnerabilityAlerts": true,
