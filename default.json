@@ -39,6 +39,7 @@
   "prHourlyLimit": 0,
   "rebaseWhen": "behind-base-branch",
   "schedule": ["at any time"],
+  "semanticCommits": "enabled",
   "separateMajorMinor": true,
   "separateMinorPatch": true
 }
