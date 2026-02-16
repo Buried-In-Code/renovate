@@ -20,13 +20,14 @@
   "automergeStrategy": "squash",
   "automergeType": "pr",
   "branchConcurrentLimit": 0,
+  "dependencyDashboard": true,
   "dependencyDashboardHeader": "",
   "lockFileMaintenance": {
     "automerge": true,
     "automergeSchedule": ["at any time"],
     "enabled": true,
     "groupName": "lockfiles",
-    "schedule": ["at any time"]
+    "schedule": ["0 */12 * * *"]
   },
   "major": {
     "automerge": false
