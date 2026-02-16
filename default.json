@@ -27,7 +27,7 @@
     "automergeSchedule": ["at any time"],
     "enabled": true,
     "groupName": "lockfiles",
-    "schedule": ["0 */12 * * *"]
+    "schedule": ["* */12 * * *"]
   },
   "major": {
     "automerge": false
